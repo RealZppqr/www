@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Friends - Zppqr</title>
+  <meta name="description" content="Friends list" />
+  <meta name="author" content="zppqr" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+
+  <link rel="icon" href="favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background-color: var(--background, #fff);
+    }
+    .bg-background {
+      background-color: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      .bg-background {
+        background-color: #000;
+      }
+    }
+
+    /* Force links to be blue */
+    a {
+      color: #2563eb !important;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #1d4ed8 !important;
+    }
+  </style>
+</head>
+
+<body class="min-h-svh bg-background flex flex-col font-mono text-sm antialiased">
+  <main class="flex-1 flex flex-col">
+    <div class="w-full flex-1 font-mono flex p-8">
+
+      <!-- LEFT SIDEBAR -->
+      <div class="flex flex-col gap-12 w-[24rem] text-left">
+
+        <!-- Navigation -->
+        <div class="flex items-center gap-2 font-medium">
+          <a class="flex items-center gap-2" href="/">blog</a> /
+          <a href="https://twitter.com/zppqrr" target="_blank" rel="noreferrer">twitter</a> /
+          <a href="https://github.com/RealZppqr" target="_blank" rel="noreferrer">github</a> /
+          <a href="/friends" target="_blank" rel="noreferrer">friends</a> /
+          <a href="/projects" target="_blank" rel="noreferrer">projects</a>
+        </div>
+
+        <!-- Friends List -->
+        <div class="flex flex-col gap-12">
+          <div class="flex flex-col gap-4">
+            <h2 class="text-lg font-medium">Friends</h2>
+
+            <!-- Friends Grid -->
+            <div class="grid sm:grid-cols-2 gap-4">
+              <!-- Friend card -->
+              
+              <a href="https://github.com/3z4k" target="_blank" class="flex items-center gap-2">
+                <img alt="Kaze M Kylan" class="rounded-md border border-border" width="36" height="36" src="https://avatars.githubusercontent.com/u/91467994?v=4">
+                <span class="text-sm font-medium">Kaze M Kylan</span>
+              </a>
+               <a href="#" target="_blank" class="flex items-center gap-2">
+                <img alt="Netoo" class="rounded-md border border-border" width="36" height="36" src="https://cdn.discordapp.com/avatars/1364036104176668744/2c92f30eebe19069880c1df86086c383?size=1024">
+                <span class="text-sm font-medium">Netoo</span>
+              </a>
+              
+                 </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
